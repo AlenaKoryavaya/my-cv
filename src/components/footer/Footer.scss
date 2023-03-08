@@ -1,0 +1,167 @@
+@import "../../styles/variables.scss";
+
+.footer {
+    width: 100%;
+    margin-top: 100px;
+    border-top: 1px solid gray;
+
+    @media screen and (max-width: 450px) {
+        margin-top: 0;
+    }
+
+    &__inner {
+        width: 100%;
+        padding: 40px 0;
+
+        @media screen and (max-width: 695px) {
+            padding: 30px 0;
+        }
+    }
+    &__title {
+        color: #fff;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 420px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__contacts-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @media screen and (max-width: 660px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__contacts {
+        &-item {
+            display: flex;
+            margin-top: 15px;
+            align-items: center;
+
+            @media screen and (max-width: 420px) {
+                margin-top: 5px;
+            }
+        }
+    }
+    .contact-icon {
+        margin-right: 20px;
+        font-size: 22px;
+        color: $purple-color;
+
+        @media screen and (max-width: 420px) {
+            font-size: 18px;
+        }
+    }
+    .contact-link {
+        color: $text-color;
+        transition: $transition;
+
+        @media screen and (max-width: 695px) {
+            font-size: 14px;
+        }
+        &:hover {
+            color: $purple-color;
+        }
+    }
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        margin-left: 4%;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: $transition;
+        cursor: pointer;
+
+        @media screen and (max-width: 770px) {
+            width: 50px;
+            height: 50px;
+        }
+        @media screen and (max-width: 660px) {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+        @media screen and (max-width: 530px) {
+            right: 20px;
+            bottom: 20px;
+        }
+
+        &:hover {
+            background-color: rgb(33, 33, 33);
+        }
+        .arrow-icon {
+            font-size: 22px;
+            color: $blue-bright-color;
+        }
+        &_hidden {
+            @media screen and (max-width: 660px) {
+                visibility: hidden;
+            }
+        }
+    }
+    &__messangers {
+        display: flex;
+
+        @media screen and (max-width: 660px) {
+            margin-top: 25px;
+        }
+
+        @media screen and (max-width: 420px) {
+            margin-top: 5px;
+            flex-direction: column;
+        }
+
+        .messanger-wrapper {
+            display: flex;
+            margin-left: 30px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            background-image: $gradient;
+            transition: $transition;
+
+            @media screen and (max-width: 715px) {
+                margin-left: 25px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: 660px) {
+                margin-left: 0px;
+                margin-right: 25px;
+            }
+            @media screen and (max-width: 420px) {
+                margin-top: 12px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+            .messanger-link {
+                display: flex;
+                padding: 10px 20px;
+                align-items: center;
+                border-radius: 100px;
+                color: #fff;
+
+                @media screen and (max-width: 695px) {
+                    padding: 8px 18px;
+                    font-size: 14px;
+                }
+
+                @media screen and (max-width: 420px) {
+                    padding: 6px 16px;
+                }
+
+                .messanger {
+                    color: #fff;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

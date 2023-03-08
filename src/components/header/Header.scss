@@ -1,0 +1,161 @@
+@import "../../styles/variables.scss";
+
+.overlay {
+    display: none;
+
+    @media screen and (max-width: 840px) {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f0ffff00;
+
+        &_hidden {
+            display: none;
+            transition: $transition;
+        }
+    }
+}
+.header {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    align-items: center;
+    color: #fff;
+
+    @media screen and (max-width: 840px) {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    &__burger {
+        position: relative;
+        z-index: 1;
+        display: none;
+        transition: $transition;
+
+        @media screen and (max-width: 840px) {
+            display: block;
+            background: none;
+            color: #ffffffc7;
+            font-size: 24px;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                linear-gradient(10deg, #a11c7e, #2a4482);
+            padding: 4px 13px;
+            border: none;
+            border-radius: 50%;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (max-width: 840px) {
+            position: absolute;
+            z-index: 2;
+            width: 250px;
+            top: 0px;
+            right: 0px;
+            transition: $transition;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 200px;
+        }
+
+        &__plus-sign {
+            display: none;
+            transition: $transition;
+
+            @media screen and (max-width: 840px) {
+                display: block;
+                position: absolute;
+                z-index: 2;
+                top: 5px;
+                right: 25px;
+                padding: 10px;
+                font-size: 25px;
+                color: $text-color;
+                transform: rotate(45deg);
+                cursor: pointer;
+
+                &:hover {
+                    color: #2a4482;
+                }
+            }
+        }
+        &_hidden {
+            top: -500px;
+        }
+        &__list {
+            position: relative;
+            display: flex;
+            margin-right: 20px;
+            z-index: 1;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+
+            @media screen and (max-width: 840px) {
+                margin: 0;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: rgba(33, 33, 33);
+                padding: 15px 40px 30px 24px;
+            }
+        }
+        &__item {
+            line-height: 50px;
+
+            @media screen and (max-width: 840px) {
+                line-height: 16px;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 20px;
+                text-decoration: none;
+                color: #fff;
+                transition: all 0.5s linear;
+                overflow: hidden;
+                &:hover {
+                    color: #a11c7e;
+                    // border-bottom: 3px solid #a11c7e;
+                }
+
+                @media screen and (max-width: 840px) {
+                    padding: 14px;
+                }
+            }
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 0 20px;
+            border-radius: 100px;
+            background-image: $gradient;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.5s linear;
+
+            @media screen and (max-width: 840px) {
+                margin: 0;
+                margin-top: 15px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                color: #fff;
+            }
+        }
+    }
+}

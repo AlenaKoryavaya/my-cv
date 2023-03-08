@@ -1,0 +1,118 @@
+@import "../../styles/variables.scss";
+@import "../../styles/tooltip.scss";
+
+.education {
+    &__content {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+
+        .content__item {
+            display: flex;
+            width: 50%;
+            margin-bottom: 50px;
+            padding-left: 30px;
+            align-items: flex-start;
+
+            @media screen and (max-width: 600px) {
+                width: 100%;
+                padding-left: 60px;
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: 475px) {
+                padding-left: 40px;
+            }
+            @media screen and (max-width: 440px) {
+                padding-left: 20px;
+            }
+            @media screen and (max-width: 400px) {
+                padding-left: 0px;
+                margin-bottom: 20px;
+            }
+            .icon-wrapper {
+                display: flex;
+                min-width: 70px;
+                min-height: 70px;
+                align-items: center;
+                justify-content: center;
+                margin-right: 30px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background-color: rgba(255, 255, 255, 0.1);
+
+                @media screen and (max-width: 695px) {
+                    min-width: 50px;
+                    min-height: 50px;
+                }
+            }
+            &-icon {
+                color: #3d75f9;
+                font-size: 29px;
+
+                @media screen and (max-width: 695px) {
+                    font-size: 22px;
+                }
+            }
+            &-title {
+                font-size: 20px;
+
+                @media screen and (max-width: 840px) {
+                    font-size: 17px;
+                }
+                @media screen and (max-width: 695px) {
+                    font-size: 16px;
+                }
+
+                a {
+                    color: $text-color;
+                    text-decoration: none;
+                    transition: $transition;
+                }
+                a:hover {
+                    color: #3d75f9;
+                }
+            }
+            &-year {
+                margin: 5px 0;
+
+                @media screen and (max-width: 600px) {
+                    margin: 0;
+                }
+            }
+            &-prof {
+                font-size: 18px;
+                color: #c36ec3;
+
+                @media screen and (max-width: 840px) {
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 695px) {
+                    line-height: 16px;
+                }
+            }
+            &-link {
+                font-size: 18px;
+                color: #c36ec3;
+                text-decoration: none;
+                transition: $transition;
+
+                @media screen and (max-width: 840px) {
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 695px) {
+                    line-height: 16px;
+                }
+
+                &:hover {
+                    color: $purple-color;
+                }
+            }
+        }
+    }
+}

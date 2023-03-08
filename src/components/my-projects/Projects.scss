@@ -1,0 +1,131 @@
+@import "../../styles/variables.scss";
+
+.projects {
+    margin-top: 0;
+}
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    &-inner {
+        border-radius: 25px;
+        img {
+            display: block;
+            width: 1024px;
+            height: auto !important;
+            margin: 0 auto;
+        }
+    }
+    &-item {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: $gradient;
+            opacity: 90%;
+        }
+    }
+    &-caption {
+        top: 42%;
+
+        @media screen and (max-width: 840px) {
+            top: 31%;
+        }
+        @media screen and (max-width: 695px) {
+            top: 28%;
+        }
+        @media screen and (max-width: 550px) {
+            top: 25%;
+        }
+        @media screen and (max-width: 390px) {
+            top: 18%;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-style: normal;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 695px) {
+                font-size: 25px;
+            }
+            @media screen and (max-width: 510px) {
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+            @media screen and (max-width: 450px) {
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+            @media screen and (max-width: 450px) {
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
+        }
+
+        a {
+            padding: 15px 25px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            color: #ffffffb8;
+            text-decoration: none;
+            transition: $transition;
+
+            @media screen and (max-width: 695px) {
+                padding: 10px 25px;
+            }
+
+            @media screen and (max-width: 510px) {
+                padding: 7px 20px;
+                font-size: 14px;
+            }
+            @media screen and (max-width: 510px) {
+                padding: 5px 17px;
+                font-size: 13px;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.3);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .carousel-indicators {
+        @media screen and (max-width: 420px) {
+            visibility: hidden;
+        }
+    }
+    .carousel-indicators [data-bs-target] {
+        @media screen and (max-width: 695px) {
+            width: 20px;
+        }
+        @media screen and (max-width: 550px) {
+            width: 15px;
+            height: 2px;
+            margin-right: 5px;
+        }
+    }
+    .carousel-control-next-icon {
+        @media screen and (max-width: 550px) {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    .carousel-control-prev-icon {
+        @media screen and (max-width: 550px) {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
