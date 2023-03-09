@@ -56,10 +56,6 @@
                 width: 120px;
                 height: 120px;
             }
-            @media screen and (max-width: 390px) {
-                width: 100px;
-                height: 100px;
-            }
         }
         &:after {
             content: "";
@@ -85,10 +81,6 @@
             @media screen and (max-width: 630px) {
                 width: 120px;
                 height: 120px;
-            }
-            @media screen and (max-width: 390px) {
-                width: 100px;
-                height: 100px;
             }
         }
     }
