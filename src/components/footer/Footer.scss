@@ -49,7 +49,7 @@
     .contact-icon {
         margin-right: 20px;
         font-size: 22px;
-        color: $purple-color;
+        color: $light-purple-color;
 
         @media screen and (max-width: 420px) {
             font-size: 18px;
@@ -63,7 +63,7 @@
             font-size: 14px;
         }
         &:hover {
-            color: $purple-color;
+            color: $light-purple-color;
         }
     }
     &__arrow {
@@ -113,7 +113,9 @@
         }
 
         @media screen and (max-width: 420px) {
-            margin-top: 5px;
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 360px) {
             flex-direction: column;
         }
 

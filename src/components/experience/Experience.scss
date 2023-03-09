@@ -1,19 +1,6 @@
 @import "../../styles/variables.scss";
 
 .experience {
-    position: relative;
-    z-index: 1;
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 15px;
-        width: 250px;
-        height: 250px;
-        background-color: $purple-color;
-        filter: blur(185px);
-    }
-
     &__list {
         display: flex;
         width: 100%;
@@ -24,7 +11,7 @@
     &__item {
         display: flex;
         width: 50%;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         padding-left: 30px;
         align-items: flex-start;
 
@@ -71,6 +58,7 @@
             margin: 5px 0;
         }
         .item-prof {
+            margin: 0;
             font-size: 18px;
             color: $green-bright-color;
 
