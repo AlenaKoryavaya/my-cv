@@ -16,7 +16,7 @@
         .content__item {
             display: flex;
             width: 50%;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
             padding-left: 30px;
             align-items: flex-start;
 
@@ -33,7 +33,6 @@
             }
             @media screen and (max-width: 400px) {
                 padding-left: 0px;
-                margin-bottom: 20px;
             }
             .icon-wrapper {
                 display: flex;
@@ -52,7 +51,7 @@
                 }
             }
             &-icon {
-                color: #3d75f9;
+                color: $coral-color;
                 font-size: 29px;
 
                 @media screen and (max-width: 695px) {
@@ -75,7 +74,7 @@
                     transition: $transition;
                 }
                 a:hover {
-                    color: #3d75f9;
+                    color: #fff;
                 }
             }
             &-year {
@@ -88,7 +87,7 @@
             &-prof {
                 margin: 0;
                 font-size: 18px;
-                color: #c36ec3;
+                color: $stone-color;
 
                 @media screen and (max-width: 840px) {
                     font-size: 16px;
@@ -100,7 +99,7 @@
             }
             &-link {
                 font-size: 18px;
-                color: #c36ec3;
+                color: $stone-color;
                 text-decoration: none;
                 transition: $transition;
 
@@ -112,7 +111,7 @@
                 }
 
                 &:hover {
-                    color: #bf51a1;
+                    color: $coral-color;
                 }
             }
         }

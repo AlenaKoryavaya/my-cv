@@ -10,7 +10,7 @@ const Projects = () => {
         <section id="projects" className="projects">
             <h2>Projects</h2>
             <Carousel>
-                <Carousel.Item interval={100000}>
+                <Carousel.Item interval={5000}>
                     <img className="d-block w-100" src={momentum} alt="First slide" />
                     <Carousel.Caption>
                         <h3>Momentum</h3>
@@ -24,7 +24,7 @@ const Projects = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={10000}>
+                <Carousel.Item interval={5000}>
                     <img className="d-block w-100" src={marvel} alt="Second slide" />
                     <Carousel.Caption>
                         <h3>Marvel information portal</h3>
@@ -34,7 +34,7 @@ const Projects = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={10000}>
+                <Carousel.Item interval={5000}>
                     <img className="d-block w-100" src={employees} alt="Third slide" />
                     <Carousel.Caption>
                         <h3>Employees accounting</h3>

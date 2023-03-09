@@ -11,7 +11,7 @@
     &__item {
         display: flex;
         width: 50%;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
         padding-left: 30px;
         align-items: flex-start;
 
@@ -28,7 +28,6 @@
         }
         @media screen and (max-width: 400px) {
             padding-left: 0px;
-            margin-bottom: 20px;
         }
         .icon-wrapper {
             display: flex;
@@ -47,7 +46,7 @@
             }
         }
         .icon {
-            color: $green-bright-color;
+            color: $stone-color;
             font-size: 29px;
 
             @media screen and (max-width: 695px) {
@@ -60,7 +59,7 @@
         .item-prof {
             margin: 0;
             font-size: 18px;
-            color: $green-bright-color;
+            color: $coral-color;
 
             @media screen and (max-width: 840px) {
                 font-size: 16px;

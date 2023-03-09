@@ -5,35 +5,16 @@
     width: 100%;
     color: $text-color;
     font-size: 16px;
-    &::after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        right: 0px;
-        bottom: -30px;
-        width: 150px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: $blue-dark-color;
-        filter: blur(150px);
-    }
 
     &__text {
         width: 100%;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 33px;
         text-align: justify;
 
         @media screen and (max-width: 695px) {
             font-size: 16px;
-            line-height: 25px;
-        }
-        @media screen and (max-width: 400px) {
-            line-height: 20px;
-        }
-
-        span {
-            color: #b64999;
+            line-height: 27px;
         }
     }
 }

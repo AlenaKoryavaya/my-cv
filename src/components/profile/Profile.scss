@@ -43,9 +43,9 @@
             position: absolute;
             z-index: -1;
             top: 15px;
-            width: 250px;
-            height: 250px;
-            background-color: $purple-color;
+            width: 220px;
+            height: 220px;
+            background-color: $coral-color;
             filter: blur(65px);
 
             @media screen and (max-width: 840px) {
@@ -65,7 +65,7 @@
             bottom: 15px;
             width: 250px;
             height: 250px;
-            background-color: $blue-dark-color;
+            background-color: $stone-color;
             filter: blur(65px);
 
             @media screen and (max-width: 840px) {
@@ -94,7 +94,7 @@
         text-align: center;
         text-transform: uppercase;
         span {
-            color: $purple-color;
+            color: $coral-color;
         }
     }
     &__profession {
@@ -143,11 +143,14 @@
             }
             .social-link {
                 text-decoration: none;
-                color: #546ca4;
+                color: $stone-color;
                 font-size: 25px;
                 transition: $transition;
                 @media screen and (max-width: 330px) {
                     font-size: 20px;
+                }
+                &:hover {
+                    color: $stone-light-color;
                 }
             }
             .social-link::before {

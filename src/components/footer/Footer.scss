@@ -42,14 +42,14 @@
             align-items: center;
 
             @media screen and (max-width: 420px) {
-                margin-top: 5px;
+                margin-top: 10px;
             }
         }
     }
     .contact-icon {
         margin-right: 20px;
         font-size: 22px;
-        color: $light-purple-color;
+        color: $stone-color;
 
         @media screen and (max-width: 420px) {
             font-size: 18px;
@@ -63,7 +63,7 @@
             font-size: 14px;
         }
         &:hover {
-            color: $light-purple-color;
+            color: $stone-light-color;
         }
     }
     &__arrow {
@@ -97,7 +97,7 @@
         }
         .arrow-icon {
             font-size: 22px;
-            color: $blue-bright-color;
+            color: $coral-color;
         }
         &_hidden {
             @media screen and (max-width: 660px) {
