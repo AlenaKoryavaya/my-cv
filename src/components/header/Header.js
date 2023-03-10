@@ -35,6 +35,9 @@ const Header = () => {
                             <a href="#education">Education</a>
                         </li>
                         <li className="nav__item" onClick={onToggleMenu}>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li className="nav__item" onClick={onToggleMenu}>
                             <a href="#projects">Projects</a>
                         </li>
                         <li className="nav__item" onClick={onToggleMenu}>

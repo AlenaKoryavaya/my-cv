@@ -13,13 +13,12 @@ const Projects = () => {
                 <Carousel.Item interval={5000}>
                     <img className="d-block w-100" src={momentum} alt="First slide" />
                     <Carousel.Caption>
-                        <h3>Momentum</h3>
                         <a
                             href="https://rolling-scopes-school.github.io/alenakoryavaya-JSFEPRESCHOOL2022Q2/"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            preview
+                            Momentum
                         </a>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -27,9 +26,12 @@ const Projects = () => {
                 <Carousel.Item interval={5000}>
                     <img className="d-block w-100" src={marvel} alt="Second slide" />
                     <Carousel.Caption>
-                        <h3>Marvel information portal</h3>
-                        <a href="/" target="_blank">
-                            preview
+                        <a
+                            href="https://alenakoryavaya.github.io/React-API-app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Marvel information portal
                         </a>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -37,9 +39,12 @@ const Projects = () => {
                 <Carousel.Item interval={5000}>
                     <img className="d-block w-100" src={employees} alt="Third slide" />
                     <Carousel.Caption>
-                        <h3>Employees accounting</h3>
-                        <a href="/" target="_blank">
-                            preview
+                        <a
+                            href="https://alenakoryavaya.github.io/Employees-app-React/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Employees accounting
                         </a>
                     </Carousel.Caption>
                 </Carousel.Item>

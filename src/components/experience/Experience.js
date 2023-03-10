@@ -12,8 +12,6 @@ const Experience = () => {
     return (
         <section id="experience" className="experience">
             <h2>Work experience</h2>
-            {/* <FontAwesomeIcon icon={faBagShopping} />
-            <FontAwesomeIcon icon={faDumbbell} /> */}
             <div className="experience__list">
                 <div className="experience__item">
                     <div className="icon-wrapper">

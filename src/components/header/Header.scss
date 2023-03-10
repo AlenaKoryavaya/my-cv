@@ -3,7 +3,7 @@
 .overlay {
     display: none;
 
-    @media screen and (max-width: 840px) {
+    @media screen and (max-width: 900px) {
         position: absolute;
         display: block;
         z-index: 1;
@@ -25,7 +25,7 @@
     align-items: center;
     color: #fff;
 
-    @media screen and (max-width: 840px) {
+    @media screen and (max-width: 900px) {
         justify-content: flex-end;
         align-items: flex-start;
     }
@@ -35,7 +35,7 @@
         display: none;
         transition: $transition;
 
-        @media screen and (max-width: 840px) {
+        @media screen and (max-width: 900px) {
             display: flex;
             padding: 10px 12px;
             background: none;
@@ -56,7 +56,7 @@
         display: flex;
         justify-content: flex-end;
 
-        @media screen and (max-width: 840px) {
+        @media screen and (max-width: 900px) {
             position: absolute;
             z-index: 2;
             width: 250px;
@@ -73,7 +73,7 @@
             display: none;
             transition: $transition;
 
-            @media screen and (max-width: 840px) {
+            @media screen and (max-width: 900px) {
                 display: block;
                 position: absolute;
                 z-index: 2;
@@ -102,7 +102,7 @@
             align-items: center;
             list-style: none;
 
-            @media screen and (max-width: 840px) {
+            @media screen and (max-width: 900px) {
                 margin: 0;
                 width: 100%;
                 flex-direction: column;
@@ -114,7 +114,7 @@
         &__item {
             line-height: 50px;
 
-            @media screen and (max-width: 840px) {
+            @media screen and (max-width: 900px) {
                 line-height: 16px;
             }
 
@@ -130,7 +130,7 @@
                     color: $coral-light-color;
                 }
 
-                @media screen and (max-width: 840px) {
+                @media screen and (max-width: 900px) {
                     padding: 14px;
                 }
             }
@@ -146,7 +146,7 @@
             cursor: pointer;
             transition: all 0.5s linear;
 
-            @media screen and (max-width: 840px) {
+            @media screen and (max-width: 900px) {
                 margin: 0;
                 margin-top: 15px;
             }
