@@ -8,9 +8,11 @@
 
     &__text {
         width: 100%;
+        margin-bottom: 15px;
         font-size: 20px;
         line-height: 33px;
         text-align: justify;
+        letter-spacing: 1px;
 
         @media screen and (max-width: 695px) {
             font-size: 16px;

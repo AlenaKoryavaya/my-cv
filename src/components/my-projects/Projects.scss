@@ -82,11 +82,17 @@
             transition: $transition;
 
             @media screen and (max-width: 695px) {
-                padding: 15px 25px;
+                padding: 15px 20px;
+                font-size: 20px;
             }
 
             @media screen and (max-width: 510px) {
                 font-size: 16px;
+            }
+
+            @media screen and (max-width: 390px) {
+                padding: 10px 20px;
+                font-size: 14px;
             }
 
             &:hover {
@@ -117,11 +123,19 @@
             width: 1.5rem;
             height: 1.5rem;
         }
+        @media screen and (max-width: 390px) {
+            width: 1rem;
+            height: 1rem;
+        }
     }
     .carousel-control-prev-icon {
         @media screen and (max-width: 550px) {
             width: 1.5rem;
             height: 1.5rem;
+        }
+        @media screen and (max-width: 390px) {
+            width: 1rem;
+            height: 1rem;
         }
     }
 }
