@@ -21,7 +21,7 @@ const Education = () => {
                     <div>
                         <h3>State Technical College n.a. B.E. Lobanka</h3>
                         <p className="content__item-year">2010 - 2014</p>
-                        <p className="content__item-prof">Agronomist</p>
+                        <p className="content__item-prof">Agricultural Researcher</p>
                     </div>
                 </div>
                 <div className="content__item">
@@ -29,8 +29,8 @@ const Education = () => {
                         <FontAwesomeIcon icon={faGraduationCap} className="content__item-icon" />
                     </div>
                     <div>
-                        <h3>Moscow International University</h3>
-                        <p className="content__item-year">2021 - to date</p>
+                        <h3>MI University</h3>
+                        <p className="content__item-year">2021 - 2023</p>
                         <p className="content__item-prof">Organisation Management</p>
                     </div>
                 </div>

@@ -6,10 +6,10 @@ const Skills = () => {
             <h2>Professional Skills</h2>
             <div className="skills__container">
                 <ul>
-                    <li className="skills__item">HTML5</li>
-                    <li className="skills__item">CSS3 / SASS</li>
                     <li className="skills__item">JavaScript</li>
                     <li className="skills__item">TypeScript basics</li>
+                    <li className="skills__item">HTML5</li>
+                    <li className="skills__item">CSS3 / SASS</li>
                     <li className="skills__item">Git / GitHub</li>
                     <li className="skills__item">BEM methodology</li>
                 </ul>
